@@ -52,7 +52,7 @@ Corremos un alineamiento :
 
 ### árbol de máxima verosimilitud 
 
- cp copiamos el script FASconCAT-G_v1.05.1.pl que está en la carpeta data 
+ Copiamos el script FASconCAT-G_v1.05.1.pl que está en la carpeta data 
  ```cp  /home/bio.pt/data/FASconCAT-G_v1.05.1.pl .``` 
  creamos una carpeta nueva (arbor_mvero) donde sólo tengamos nuestro alineamiento fasta y el script de FASconCAT, cuando tengamos la carpeta corremos el codico
  ``` ./FASconCAT-G_v1.05.1.pl```
