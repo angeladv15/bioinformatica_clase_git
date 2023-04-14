@@ -70,12 +70,23 @@ En la carpeta donde tenemos la matriz corremos:
 
 
 
+### punto 3
+
+Nos salimos de la capeta **punto_2**  con el codigo ```cd ..``` , creamos un directorio nuevo para el punto 3 ```mkdir punto_3``` y accedemos a este con este codigo ```cd punto_3```
+
+ya en la carpeta rescargamos el archivo utilizando el siguiente codigo ```curl https://raw.githubusercontent.com/paula-torres/bioinformatica_ur/main/files/archivo1.csv > archivo1.csv```
+
+Para saber cuántas filas, número de caracteres y columnas tiene se utiliza el siguiente codigo ```grep -v '>' archivo1.csv  | wc```
+
+Luego se modifica la palabra chrom por Cromosoma y se reemplaza las comas , por tabs \t.  se utlizo el siguiente condigo 
+ 
+ ```sed 's/chr/Cromosoma/g; s/,/\t/g' archivo1.csv > archivo_1```
+
+el resultado fue guardado en un archivo de nombre result_file.bed.
 
 
 
 
-
-### Head 3
 *italic*
 _italica_
 **negrilla**
