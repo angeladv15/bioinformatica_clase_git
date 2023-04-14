@@ -65,9 +65,7 @@ y copiamos el resultado
 (MK860947_.1___Peridroma_saucia_TN-1:0.0000010000,((((MK860951_.1___Mythimna_loreyi_TN-5:0.0000000000,MK860952_.1___Mythimna_loreyi_TN-6:0.0000000000):0.0000022693,MK860949_.1___Mythimna_loreyi_TN-3:0.0000010000)42:0.0000026288,MK860950_.1___Mythimna_loreyi_TN-4:0.0014785769)100:0.0542250617,((MK860946_.1___Spodoptera_cilium_MA-6:0.0133200877,Query_sequence:0.0255760536)65:0.0118711696,((MK860943_.1___Spodoptera_exigua_MA-1:0.0000000000,MK860944_.1___Spodoptera_exigua_MA-2:0.0000000000):0.0000010000,MK860945_.1___Spodoptera_exigua_MA-3:0.0000010000)100:0.0443983532)98:0.0457748091)100:0.0615218649,MK860948_.1___Peridroma_saucia_TN-2:0.0000010000);
 
 en phylo.io, enraizamos el arbol y el resultado es el siguiente 
-img1
-
-
+![Caos](https://github.com/angeladv15/bioinformatica_clase_git/blob/main/Screen%20Shot%202023-04-14%20at%2012.48.26%20PM.png)
 
  
  
