@@ -1,20 +1,30 @@
 # bioinformatica_clase_git
 # Parcial
-se utiliza :
+
+***para realizar el parcial s realizaron los siguientes pasos***
+
+se utiliza el codigo :
 ```ssh -i bio.pt.pem -p 37022 bio.pt@172.25.255.10``` para eentrar al clusteer.
 
-```cd data```para entrar a la carpeta del curso 
+luego se corre ```cd data```para entrar a la carpeta del curso y
 
-```cd Parcial1```
+```cd Parcial1```para entrar a la carpeta del parcial
 
-```mkdir parcial1_angeladelgado```
+Finalmente se crea una carpeta con el formato parcial1_angeladelgado ```mkdir parcial1_angeladelgado``` y ce accede a ella ```cd parcial1_angeladelgado```
 
 ## Punto 1
-en atom pongo buscar **(>\w+)(\.1)(\s)(\w+)(\s)(\w+)(\s)(\w+)(\s)(\w+-\w+) (\w*\s\w*\s\w*\s\w*\s\w*)([()]\w*[()]\s\w*,\s\w+\s\w+;\s\w+)** 
+***Utilizando Atom ***
+
+En atom pongo buscar **(>\w+)(\.1)(\s)(\w+)(\s)(\w+)(\s)(\w+)(\s)(\w+-\w+) (\w*\s\w*\s\w*\s\w*\s\w*)([()]\w*[()]\s\w*,\s\w+\s\w+;\s\w+)** 
 
 y remplazar por **$1_$2_$3_$4_$6_$10**
+el archivo se guarda como *sequence.fasta*
+
+dentro de la carpeta del parcial se crea una carpeta del punto 1 con el siguiente codigo 
+```mkdir punto_1``
 
 se sube el arcivo al cluster utilizando 
+
 ```scp -i bio.pt.pem -P 37022 :/Users/angeladelgado/desktop/parcial/sequence.fasta bio.pt@172.25.255.10:/home/bio.pt/data/Parcial1/parcial1_angeladelgado/punto_1```
 
 se corre ```salloc```antes de correr el blast
@@ -84,27 +94,24 @@ Luego se modifica la palabra chrom por Cromosoma y se reemplaza las comas , por 
 
 el resultado fue guardado en un archivo de nombre result_file.bed.
 
+Finalmnete guardamos las filas que contengan el patrón coding en un archivo con el nombre result_file_coding.bed utlizando el siguieentee codigo:
+
+```grep -w "coding" result_file.bed > result_file_coding.bed```
+
+### Punto 4
+
+Se comprimio la carpeta con todos los archivos resultantes que están en el cluster utilizando el codigo 
+```zip parcial1_angeladelgado.zip parcial1_angeladelgado/```
+
+la descargamos en el computador utilizando el codigo 
+
+```scp -r -i bio.pt.pem -P 37022 bio.pt@login01-hpc.urosario.edu.co:/home/bio.pt/data/Parcial1/parcial1_angeladelgado.zip /Users/angeladelgado/desktop/parcial```
+
+y se cargo el archivo zip a el  repositorio.
 
 
 
-*italic*
-_italica_
-**negrilla**
-_letras **mixtas** se hace así_
-~tachado~
-```codigo```
-* Lista1
-* Lista2
-  * Lista 2.1
-  * Lista 2.2
-* Lista3
-1. uno
-2. dos
-  2. 1 dos.1
-3. tres
-[Google scholar](https://scholar.google.com/citations?user=Oqq-sgcAAAAJ&hl=es)
-![Caos](https://i.pinimg.com/originals/e0/19/17/e0191785c29396e42bccc19c6c3db098.jpg)
-Nombre | Nota_final
--------|-----------
-Fabian_Salgado | 5.0
-Pepito perez | 5.5
+
+
+
+
