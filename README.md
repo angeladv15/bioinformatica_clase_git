@@ -36,7 +36,7 @@ para crear nuestra base de datos usamos el siguiente codigo:
 despues hacemos nuestro blast nuestro BLAST con el codigo:
 ```blastn -query query_parcial -task megablast -db trans_sequence -outfmt 7 -word_size 7 -out blast_hsp90 -num_threads 1```
 
-una secuencia muy corta tendrá una puntuación menor que una grande simplemente por la cantidad de caracteres que tiene
+el blast obtenido tiene un % de identidad con el query que es una especie desconocida, tambien vemos la longitud y los mismatches que indican puntos en los que no son iguales. 
 
 
 ## Punto 2
